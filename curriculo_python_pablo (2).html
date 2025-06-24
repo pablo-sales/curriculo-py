@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>curriculo.py - Pablo Schmidt de Sales</title>
+<style>
+    body {
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 20px;
+    }
+        .container {
+        display: flex;
+    }
+    .lines {
+        text-align: right;
+        padding-right: 10px;
+        user-select: none;
+        color: #858585;
+    }
+    .code {
+        white-space: pre;
+    }
+    .comment { color: #6A9955; }
+    .keyword { color: #569CD6; }
+    .string { color: #CE9178; }
+    .function { color: #DCDCAA; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Números das linhas -->
+    <div class="lines">
+1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>
+21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>
+31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>
+41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57
+    </div>
+
+    <!-- Código -->
+    <div class="code">
+<span class="comment"># curriculo.py — Pablo Schmidt de Sales</span>
+<span class="comment"># Aplicação para Aprendiz de Manufatura Avançada - Bosch 2025</span>
+
+<span class="keyword">class</span> PabloSchmidt:
+    <span class="keyword">def</span> __init__(self):
+        self.nome = <span class="string">"Pablo Schmidt de Sales"</span>
+        self.idade = 17
+        self.cidade = <span class="string">"Curitiba - PR"</span>
+        self.formacao = [
+            <span class="string">"Tecnólogo em Automação Industrial - UTFPR (Cursando)"</span>,
+            <span class="string">"Ensino Médio Integrado ao Técnico em Administração"</span>
+        ]
+        self.experiência = [ 
+        <span class="string">"Atualmente como Aprendiz Assistente Administrativo na Cocelpa"</span>,
+        <span class="string">"Assistente administrativo por 16 meses na Racks Refrigeração"</span>
+        ]
+        self.objetivo = <span class="string">"Me tornar Aprendiz de Manufatura Avançada na Bosch"</span>
+
+    <span class="keyword">def</span> habilidades(self):
+        <span class="keyword">return</span> [
+            <span class="string">"Raciocínio lógico"</span>,
+            <span class="string">"Organização"</span>,
+            <span class="string">"Disciplina"</span>,
+            <span class="string">"Trabalho em equipe"</span>,
+            <span class="string">"Proatividade"</span>,
+            <span class="string">"Curiosidade"</span>,
+            <span class="string">"Vontade de aprender"</span>,
+            <span class="string">"Adaptabilidade"</span>
+        ]
+
+    <span class="keyword">def</span> conhecimentos_tecnicos(self):
+        <span class="keyword">return</span> [
+            <span class="string">"Lógica de Programação"</span>,
+            <span class="string">"Python básico"</span>,
+            <span class="string">"C básico"</span>,
+            <span class="string">"AutoCAD básico"</span>,
+            <span class="string">"Excel intermediário"</span>,
+            <span class="string">"Inglês - A2"</span>
+        ]
+
+    <span class="keyword">def</span> contato(self):
+        <span class="keyword">return</span> {
+            <span class="string">"Email"</span>: <span class="string">"pablo.scsa@gmail.com"</span>,
+            <span class="string">"Telefone"</span>: <span class="string">"(41) 9 8729-8147"</span>,
+            <span class="string">"LinkedIn"</span>: <span class="string">"https://www.linkedin.com/in/pablo-schmidt-de-sales-61684528b"</span>
+        }
+
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    candidato = PabloSchmidt()
+    <span class="function">print</span>(<span class="string">"Candidato:"</span>, candidato.nome)
+    <span class="function">print</span>(<span class="string">"Cidade:"</span>, candidato.cidade)
+    <span class="function">print</span>(<span class="string">"Objetivo:"</span>, candidato.objetivo)
+    <span class="function">print</span>(<span class="string">"Habilidades:"</span>, candidato.habilidades())
+    <span class="function">print</span>(<span class="string">"Conhecimentos Técnicos:"</span>, candidato.conhecimentos_tecnicos())
+    <span class="function">print</span>(<span class="string">"Contato:"</span>, candidato.contato())
+</pre>
+</body>
+</html>
